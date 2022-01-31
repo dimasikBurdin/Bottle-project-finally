@@ -1,0 +1,68 @@
+body {
+    /* margin: 0;
+    padding: 0; */
+    /* width: 100%;
+    height: 100%; */
+    /* overflow: hidden; */
+    /* font-family: "Roboto";
+    color: #2F3952; */
+}
+
+.hystmodal__window.endChatModal {
+    width: 385px;
+    border-radius: 20px;
+}
+
+.modal{    
+    height: 250px;
+    display: flex;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.modal-header{
+    display: flex;
+}
+
+.modal-title{
+    font-family: Roboto;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    color: #2F3952;      
+}
+
+.modal-body{    
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+}
+
+.yes{
+    width: 85px;
+    height: 85px;
+    border: none;
+    background: url('../../../../../dist/img/yes.svg') no-repeat center;
+    cursor: pointer;
+}
+
+.no{
+    width: 85px;
+    height: 85px;
+    border: none;
+    background: url('../../../../../dist/img/no.svg') no-repeat center;
+    cursor: pointer;
+}
+
+.hystmodal__close {
+    top: 10px !important;
+    right: 10px !important;
+    width: 24px !important;
+    height: 24px !important;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23fff' stroke='%23111' stroke-linecap='square' stroke-miterlimit='50' stroke-width='2' d='M22 2L2 22'/%3E%3Cpath fill='none' stroke='%23111' stroke-linecap='square' stroke-miterlimit='50' stroke-width='2' d='M2 2l20 20'/%3E%3C/svg%3E") !important;
+}

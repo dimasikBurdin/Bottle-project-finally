@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: "Roboto";
+    color: #2F3952;
+}
+
+.hystmodal__window.createProfileModal {
+    width: 370px;
+    height: 585px; 
+    border-radius: 20px;
+}
+
+.modal-create{
+    border-radius: 20px;
+    background: #FFFFFF;
+}
+
+.modal-header{
+    padding-top: 16px ;
+    padding-bottom: 13px;
+    display: flex;
+    justify-content:center;
+
+}
+
+.modal-title-create{
+    font-size: 36px;
+    line-height: 56px;
+    color: #2F3952;
+      
+}
+
+.modal-body-create{
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+
+.container-nik input[type = "email"]{
+    padding: 10px;
+    font-size: 17px;
+    width: 260px;
+    height: 61px;
+    border: 2px solid #FFE9A7;
+    box-sizing: border-box;
+    border-radius: 91px;
+
+}
+
+.gender-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 72px;
+
+}
+
+.gender-man{
+    width: 76px;
+    height: 76px;
+    background: #778BEA;
+    border-radius: 23px; 
+    border:  none;
+    filter: drop-shadow(0px 3.0433px 3.0433px rgba(0, 0, 0, 0.25));
+    font-family: Roboto;
+    font-size: 46px;
+    line-height: 53px;
+    color: #2F3952;
+    cursor: pointer;
+}
+
+.gender-women{
+    width: 76px;
+    height: 76px;
+    background: #F2A684;
+    border-radius: 23px; 
+    border:  none;
+    filter: drop-shadow(0px 3.0433px 3.0433px rgba(0, 0, 0, 0.25));
+    font-family: Roboto;
+    font-size: 46px;
+    line-height: 53px;
+    color: #2F3952;
+    cursor: pointer;
+}
+
+.container-photo input[type="file"]{
+    display: none;
+}
+
+.file-lable{
+    display: block;
+    width: 109px;
+    height: 109px;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='109' height='109' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cg filter='url(%23a)'%3e%3crect x='5.568' y='2.055' width='97.718' height='97.718' rx='21.683' fill='%23fff' stroke='%23FFE9A7' stroke-width='2.282'/%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M57.998 33.056h-7.143v14.286H36.57v7.143h14.285V68.77h7.143V54.485h14.286v-7.143H57.998V33.056Z' fill='%232F3952'/%3e%3c/g%3e%3cdefs%3e%3cfilter id='a' x='.427' y='.913' width='108' height='108' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3e%3cfeFlood flood-opacity='0' result='BackgroundImageFix'/%3e%3cfeColorMatrix in='SourceAlpha' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0' result='hardAlpha'/%3e%3cfeOffset dy='4'/%3e%3cfeGaussianBlur stdDeviation='2'/%3e%3cfeComposite in2='hardAlpha' operator='out'/%3e%3cfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0'/%3e%3cfeBlend in2='BackgroundImageFix' result='effect1_dropShadow_269:11'/%3e%3cfeBlend in='SourceGraphic' in2='effect1_dropShadow_269:11' result='shape'/%3e%3c/filter%3e%3c/defs%3e%3c/svg%3e");    cursor: pointer;
+}
+
+.footer{
+    margin-top: 19px;
+}
+
+.footer input[type="submit"]{
+    width: 213px;
+    height: 61px;
+    filter: drop-shadow(0px 3.0433px 3.0433px rgba(0, 0, 0, 0.25));
+    background: #FFE9A7;
+    border-radius: 91px;
+    border: none;
+    font-family: Roboto;
+    font-size: 27px;
+    line-height: 31px;
+    color: #2F3952;
+    cursor: pointer;
+}
+
+.validation-prof {
+    margin-top: 20px;
+    color: crimson;
+    text-align: center;
+}

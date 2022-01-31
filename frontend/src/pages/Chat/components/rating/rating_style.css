@@ -1,0 +1,98 @@
+body {
+    /* margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: "Roboto";
+    color: #2F3952; */
+}
+
+.hystmodal__window.endChatRatingPartner {
+    width: 385px;
+    border-radius: 20px;
+}
+
+.rating-modal{
+    height: 250px;
+    display: flex;
+}
+
+.rating-modal-header{
+    /* padding-top: 16px ;
+    padding-bottom: 13px; */
+    display: flex;
+    /* justify-content:center;
+    flex-wrap: wrap; */
+}
+
+.rating-modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.rating-modal-title{
+    font-family: Roboto;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #2F3952;      
+}
+
+.rating-modal-body{
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    align-items: center;
+    gap: 10px;
+}
+
+.emoji1{
+    width: 64px;
+    height: 64px;
+    border: none;
+    background: url('../../../../../dist/img/Emoji1.svg');
+    filter: drop-shadow(0px 2.11248px 2.11248px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+    margin-left: 11px;
+}
+
+.emoji2{
+    width: 64px;
+    height: 64px;
+    border: none;
+    background: url('../../../../../dist/img/Emoji2.svg');
+    filter: drop-shadow(0px 2.11248px 2.11248px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+}
+
+.emoji3{
+    width: 64px;
+    height: 64px;
+    border: none;
+    background: url('../../../../../dist/img/Emoji3.svg');
+    filter: drop-shadow(0px 2.11248px 2.11248px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+}
+
+.emoji4{
+    width: 64px;
+    height: 64px;
+    border: none;
+    background: url('../../../../../dist/img/Emoji4.svg');
+    filter: drop-shadow(0px 2.11248px 2.11248px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+}
+
+.emoji5{
+    width: 64px;
+    height: 64px;
+    border: none;
+    background: url('../../../../../dist/img/Emoji5.svg');
+    filter: drop-shadow(0px 2.11248px 2.11248px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+    margin-right: 11px;
+}

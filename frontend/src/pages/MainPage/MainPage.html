@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bottle</title>
+    <link rel="icon" href="../../../test-icon.png"/>
+    <!-- leaflet -->    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+</head>
+<body>    
+    <div class="mapid" id="mapid"></div>
+    <button class="profile" data-hystmodal="#editProfile"></button>    
+    <div class="select-wrapper">
+        <select name="" class="categories">
+            <option selected>Все места</option>
+            <option>Тусовки</option>
+            <option>Продажи</option>
+            <option>Знакомства</option>
+            <option>Спорт</option>
+            <option>Прочее</option>
+        </select>
+    </div>
+    <form class="search-form">
+        <input type="search" placeholder="Найти" id="search-field" class="search-field">
+    </form>
+    <button class="chat"></button>
+    <button class="new-bottle" data-hystmodal="#myModal"></button>
+    <button class="back-to-not-create"></button>
+    <div class="hystmodal" id="myModal" aria-hidden="true">
+        <div class="hystmodal__wrap">
+            <div class="hystmodal__window" role="dialog" aria-modal="true">
+                <button data-hystclose class="hystmodal__close">Close</button>  
+                <form class="modal-window">
+                    <div class="modal-col1">
+                        <div class="modal-window-categories">
+                            <label for="modal-categories" class="modal-window-categories-name">Категории</label>
+                            <select class="modal-categories" id="modal-categories" name="categories" required>
+                                <!-- <option selected></option> -->
+                                <option selected disabled></option>
+                                <option>Тусовки</option>
+                                <option>Продажи</option>
+                                <option>Знакомства</option>
+                                <option>Спорт</option>
+                                <option>Прочее</option>
+                            </select>
+                        </div>
+                        <div class="modal-window-h">
+                            <label for="modal-h" class="modal-window-h-name">Заголовок:</label>
+                            <input type="text" class="modal-h" id="modal-h" placeholder="Заголовок..." required>
+                        </div>
+                        <div class="modal-time-area">
+                            <label for="modal-time" class="modal-window-h-name">Время действия бутылочки:</label>
+                            <input type="number" min="1" max="24" class="modal-time" id="modal-time" value="1"> ч.
+                        </div>
+                        <div class="modal-pick-count-area">
+                            <label for="modal-pick-count" class="modal-window-h-name" >Максимальное количество поднятий бутылочки:</label>
+                            <input type="number" min="1" class="modal-pick-count" id="modal-pick-count" value="1">
+                        </div>                       
+                    </div>
+                    
+                    <div class="modal-window-description">
+                        <label for="modal-description" class="modal-window-description-name">Описание:</label>
+                        <textarea class="modal-description" id="modal-description" required></textarea>
+                    </div>
+                    <div class="modal-window-user-image">
+                        <output class="modal-user-image-list"></output>
+                    </div>
+                    <div class="modal-window-add-exit">
+                        <input type="file" id="modal-user-input" class="modal-user-input-image" name="files[]" multiple>
+                        <label for="modal-user-input" class="modal-user-label-image"></label>
+                        <button type="submit" class="modal-window-exit-button">Выбрать адрес</button>                        
+                    </div>                    
+                </form>
+            </div>
+        </div> 
+    </div>
+
+    
+
+    <div class="hystmodal" id="editProfile" aria-hidden="true">
+        <div class="hystmodal__wrap">
+            <div class="hystmodal__window editProfile" role="dialog" aria-modal="true">
+                <button data-hystclose class="hystmodal__close">Закрыть</button>
+                <div class="modal">
+                    <div class="modal-content">
+                        <div class="photo"></div>
+                        <div class="change-photo">
+                            <label class="file-lable">
+                                Выбрать другую картинку                                
+                                <input type="file" class="modal-editProfile-load-image" name="" value="+">                                
+                            </label>
+                        </div>      
+                        <div class="rating">    
+                            <canvas id="myChart" width='150' height='150'></canvas>                            
+                        </div>
+                        <div id="container">
+                            <div id="left">
+                                <div class="nikName">
+                                    <h3 class="title">Никнейм</h3>
+                                </div>
+                                <div class="mail">
+                                    <h3 class="title" id='title-email'>Почта</h3>
+                                </div>
+                                <div class="password">
+                                    <h3 class="title">Пароль</h3>
+                                </div>
+                            </div>
+                            <div id="right">
+                                <p class="modal-editProfile-nickname">Никнейм</p>
+                                <p class="modal-editProfile-email">Почта</p>
+                                <a href="#" data-hystmodal="#">Изменить пароль</a>
+                            </div> 
+                          </div>
+                          <!-- <div class='return-to-map'></div>     -->
+                          <button class='profile-logout'>Выйти</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,166 @@
+body {
+    background-color: #FFE9A7;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFE9A7;
+    border-bottom: 1px solid black;
+}
+
+.logo {
+    width: 150px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    /* padding: 5px 0 0 0; */
+    margin-left: 10px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0 3% 0 0;
+}
+
+.buttons_entry {
+    padding: 0 5% 0 0;
+    display: flex;
+    align-items: center;
+}
+
+.buttons_reg {
+    display: flex;
+    align-items: center;
+}
+
+.button-entry {
+    background-color: #FFE9A7;
+    width: 200px;
+    height: 60px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: Arial, serif;
+    border: 1px solid #63CDDA;
+    color: black;
+}
+
+.button-register {
+    width: 200px;
+    height: 60px;
+    border-radius: 25px;
+    background-color: #63CDDA;
+    text-decoration: none;
+    font-size: 25px;
+    border: 1px;
+    font-family: 'Arial', serif;
+    color: black;
+}
+
+.button-entry:hover{
+    background-color: #63CDDA;
+}
+
+.button-register:hover{
+    background-color: #62afdb;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.main-page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.main-content {
+    padding-left: 50px;
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content-pic{
+    height: 100%;
+}
+
+.main-content-picture{
+    /* height: 77.2vh; */
+    width: 900px;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.main-content-text{
+    margin: 0 40px;
+    max-width: 485px;
+}
+
+.main-text-and-button {
+    display: flex;
+    flex-direction: column;
+    margin: 0 40px;
+}
+
+.h1 {
+    font-size: 25pt;
+    font-family: Arial, serif;
+    font-weight: bold;
+}
+
+.h2 {
+    font-size: 20pt;
+    font-family: Arial, serif;
+}
+
+.content-start-button {
+    padding-top: 35px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.start-button {
+    width: 350px;
+    height: 100px;
+    border-radius: 45px;
+    background-color: #63CDDA;
+    text-decoration: none;
+    font-size: 30pt;
+    border: 1px;
+    font-family: 'Arial', serif;
+    color: black;
+}
+
+.start-button:hover{
+    background-color: #62afdb;
+}
+
+footer {
+    width: 100%;
+    height: 70px;
+    background-color: #002137;
+    color: white;
+}
+
+.abcRioButtonContents {
+    margin-right: 55px !important;
+}
+
+
+
+

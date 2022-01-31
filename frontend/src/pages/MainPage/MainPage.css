@@ -1,0 +1,208 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto";
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: "Roboto";
+}
+
+.mapid {    
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    
+    z-index: 0;    
+}
+
+.profile {
+    position: fixed;    
+    width: 80px;
+    height: 80px;
+    border: 1px;
+    border-radius: 20%;
+    right: 100px;
+    top: 40px;    
+    background: url('../../../dist/img/defaultAvatar.svg') 50% 50% no-repeat;
+    background-size: 80px 80px;
+    /* background-color: rgba(255, 233, 167, 0.9); */
+    z-index: 1;
+    cursor: pointer;
+}
+
+.categories{
+    position: fixed;
+    width: 150px;
+    height: 40px;
+    padding: 10px;
+    border: 1px;
+    border-radius: 20px;
+    right: 200px;
+    top: 50px;
+    background-color: rgba(255, 233, 167, 0.9);
+    z-index: 1;
+    cursor: pointer;
+}
+
+#search-field {
+    position: fixed;
+    width: 250px;
+    height: 40px; 
+    padding: 10px;
+    border: 1px;
+    border-radius: 20px;
+    left: 60px;
+    top: 50px;
+    background-color: rgba(255, 233, 167, 0.9);
+    z-index: 1;
+}
+
+.chat {
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    border: 1px;
+    border-radius: 20%;
+    left: 60px;
+    bottom: 140px;
+    background: url('../../../dist/img/chaty.svg') 50% 50% no-repeat;
+    background-size: 50px 50px;
+    background-color: rgba(255, 233, 167, 0.9);
+    cursor: pointer;
+    
+    z-index: 1;
+}
+
+.new-bottle {
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    border: 1px;
+    border-radius: 20%;
+    left: 60px;  
+    bottom: 40px;
+    background: url('../../../dist/img/Dobavlenie.svg') no-repeat center;
+    background-size: 45px 45px;
+    background-color: rgba(255, 233, 167, 0.9);
+    cursor: pointer;
+    
+    z-index: 1;    
+}
+
+.back-to-not-create { 
+    visibility: visible;
+    display: none;    
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    border: 1px;
+    border-radius: 20%;
+    left: 60px;  
+    bottom: 40px;
+    
+    background: url('../../../dist/img/nazad.svg') no-repeat center;
+    background-size: 45px 45px;
+    background-color: rgba(255, 233, 167, 0.9);
+}
+
+.AAAAA {
+    z-index: 1000;    
+}
+
+@media (max-width: 768px) {
+    .chat {
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        border: 1px;
+        border-radius: 20%;
+        left: 20px;
+        bottom: 80px;
+        background: url('../../../dist/img/chaty.svg') 50% 50% no-repeat;
+        background-size: 30px 30px;
+        background-color: rgba(255, 233, 167, 0.9);
+
+        z-index: 1;
+    }
+
+    .new-bottle {
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        border: 1px;
+        border-radius: 20%;
+        left: 20px;  
+        bottom: 20px;
+        background: url('../../../dist/img/Dobavlenie.svg') no-repeat center;
+        background-size: 30px 30px;
+        background-color: rgba(255, 233, 167, 0.9);
+        
+        z-index: 1;    
+    }
+
+    .profile {
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        right: 20px;
+        border: 1px;
+        border-radius: 20%;
+        top: 20px;
+        background-size: 50px 50px;
+        /* background-color: rgba(255, 233, 167, 0.9); */
+        z-index: 1;     
+    }
+
+    .profile:active {
+        background-color: rgba(1, 182, 236, 0.9);
+    }
+
+    .categories{
+        position: fixed;
+        width: 125px;
+        height: 40px; 
+        padding: 10px;
+        border: 1px;
+        border-radius: 20px;
+        right: 80px;
+        top: 20px;
+        background-color: rgba(255, 233, 167, 0.9);
+        z-index: 1;
+    }
+
+    #search-field {
+        position: fixed;
+        width: 125px;
+        height: 40px; 
+        padding: 10px;
+        border: 1px;
+        border-radius: 20px;
+        left: 20px;
+        top: 20px;
+        background-color: rgba(255, 233, 167, 0.9);
+        z-index: 1;
+    }
+
+    .leaflet-top.leaflet-left {
+        display: none;
+    }
+
+    .back-to-not-create { 
+        visibility: visible;
+        display: none;    
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        border: 1px;
+        border-radius: 20%;
+        left: 20px;  
+        bottom: 20px;
+        
+        background: url('../../../dist/img/nazad.svg') no-repeat center;
+        background-size: 30px 30px;
+        background-color: rgba(255, 233, 167, 0.9);
+    }
+}

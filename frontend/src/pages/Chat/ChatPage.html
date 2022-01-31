@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Chat</title>
+</head>
+<body>
+    <div class="chat-page">
+        <aside class="left-panel">
+            <div class="search-box">
+                <form class ="search-field" action="">
+                    <input class="input-search" type="search" placeholder="Поиск...">
+                </form>
+            </div>
+            <div class="list-dialog" id = "dialogues">
+                <ul class="ul-list-dialog">
+
+                </ul>
+            </div>
+            <div class="return-map-button-field">
+                <button class="return-map-button">Вернуться на карту</button>
+            </div>
+        </aside>
+        <main class="chat-main">
+            <div class="top-panel" id="top-panel"></div>
+            <div class="chat" id = "chat">
+                <div class="messages-help-div">
+                    <ul class="messages" id="message-container"></ul>
+                </div>
+                <div class="send-message-panel">
+                    <div class="chat-close-dialog-area">
+                        <button type="button" class="chat-close-dialog-button">Завершить диалог</button>
+                    </div>
+                    <form class="send-container" id="send-container">
+                        <input class="input-send-message" id="message-input" type="text" placeholder="Введите сообщение" autocomplete="off" disabled>
+                        <button class="message-send-button" id="btnSend" type="submit"></button>
+                    </form>                
+                </div>
+            </div>
+        </main>
+    </div>
+    <div class="hystmodal" id="endChatModal" aria-hidden="true">
+        <div class="hystmodal__wrap">
+            <div class="hystmodal__window endChatModal" role="dialog" aria-modal="true">
+                <button data-hystclose class="hystmodal__close">Закрыть</button>
+                <div class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span class="modal-title">Вы уверены, что хотите завершить диалог?</span>
+                        </div> 
+                        <div class="modal-body">
+                            <button class="yes endChat-yes-button" ></button>
+                            <button class="no endChat-no-button"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hystmodal" id="endChatRatingPartner" aria-hidden="true">
+        <div class="hystmodal__wrap">
+            <div class="hystmodal__window endChatRatingPartner" role="dialog" aria-modal="true">
+                <button data-hystclose class="hystmodal__close">Закрыть</button>
+                <div class="rating-modal">
+                    <div class="rating-modal-content">
+                        <div class="rating-modal-header">
+                            <span class="rating-modal-title"></span>
+                        </div> 
+                        <div class="rating-modal-body">
+                            <button class="emoji1 emoji" value="1"></button>
+                            <button class="emoji2 emoji" value="2"></button>
+                            <button class="emoji3 emoji" value="3"></button>
+                            <button class="emoji4 emoji" value="4"></button>
+                            <button class="emoji5 emoji" value="5"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

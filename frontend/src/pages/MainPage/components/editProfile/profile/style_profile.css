@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: "Roboto";
+    color: #2F3952;
+}
+
+.hystmodal__window.editProfile {
+    width: 400px;
+    height: 680px;
+}
+
+.modal{
+    font-family: "Roboto";       
+    background: white;
+    border-radius: 26px;        
+}
+
+.modal-content{
+    display: grid;
+    justify-content: center;    
+}
+
+.photo{
+    width: 100px;
+    height: 100px;
+    background: url('../image/Ава.svg');
+    margin-top: 35px;
+    margin-bottom: 20px;
+    justify-self: center;
+    border-radius: 20%;
+    
+}
+
+.change-photo input[type="file"]{
+    display: none;
+}
+.change-photo{
+    justify-self: center;
+}
+
+.file-lable{
+    display: block;
+    /* width: 120px; */
+    height: 10px;
+    cursor: pointer;
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 12px;
+    color: #63CDDA;
+    white-space: nowrap;
+    margin-bottom: 20px;
+}
+
+.rating{
+    width: 150px;
+    height: 150px; 
+    justify-self: center; 
+    display: grid;
+    grid-template-areas:"rating";
+}
+
+#myChart{
+    grid-area: rating;
+}
+
+.circle{
+    width: 138px;
+    height: 138px;
+    /* background-color: #63CDDA; */
+    border-radius: 50%;
+    grid-area: rating;
+    text-align: center;
+    /* margin-left: 55px; */
+    margin-top: 65px;
+    font-family: Roboto;
+    font-size: 25px;
+    line-height: 30px;
+    /* color: #2F3952; */
+    grid-area: rating;
+    justify-self: center;
+    align-self: center;
+
+}
+
+.return-to-map{
+    background-image: url('../image/вернутьсянакарту.svg');
+    height: 85px;
+    width: 289px;
+    margin-top: 90px;
+    cursor: pointer;
+}
+
+.rating-number {
+    padding-bottom: 100px;
+}
+
+#container {
+    /* width:960px; */
+    margin:0 auto;
+    overflow: hidden;
+}
+#left {
+    float:left;
+    /* width:340px; */
+}
+#right {
+    float:left;
+    margin-top: 8px;
+    margin-left: 60px;
+    line-height: 22px;
+}
+
+@media (max-width: 768px) {
+    .hystmodal__window.editProfile {
+        width: 330px;
+        height: 500px;
+    }
+    
+}
+
+.profile-logout {
+    height: 85px;
+    width: 290px;
+    margin-top: 90px;
+    background-color: #2F3952;
+    color: #63CDDA;
+    border: 1px;
+    border-radius: 40px;
+    /* padding: 10px; */
+    font-size: 20px;
+    cursor: pointer;
+}
+

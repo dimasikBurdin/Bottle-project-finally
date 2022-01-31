@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-signin-client_id" content="218319517979-7fkg19tu770s7f8ub9r57h21409up31n.apps.googleusercontent.com">
+    <script src='https://apis.google.com/js/platform.js'></script>
+    <title>Booble</title>
+</head>
+<body>
+    <div class="main-page">
+    <header>
+        <div class="page-logo"></div>
+        <div class="buttons">
+             <div class="buttons_entry"><button class="button-entry"
+                data-hystmodal="#entranceModal">Вход</button></div>
+             <div class="buttons_reg"><button class="button-register" data-hystmodal="#regModal">Регистрация</button></div>
+
+        </div>
+    </header>
+    <main class="main-content">
+        <div class="main-content_pic">
+        </div>
+        <div class="main-text-and-button">
+            <div class = "main-content-text">
+                <span class="h1">Почувствуй ветер вдохновения</span>
+                <p><span class="h2">Миллионы новых знакомств и тусовок ждут тебя! Знакомься, общайся. Нужно всего лишь оставить бутылочку с письмом - и оно обязательно найдет своего получателя! Свидания, вечеринки, продажа вещей - здесь ты найдешь все!</span></p>
+            </div>
+            <div class="content-start-button">
+                <button class="start-button" data-hystmodal="#entranceModal">Начать</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        some contacts
+    </footer>
+    </div>
+    <div class="hystmodal" id="regModal" aria-hidden="true">
+        <div class="hystmodal__wrap">
+            <div class="hystmodal__window regModal" role="dialog" aria-modal="true">
+                <button data-hystclose class="hystmodal__close">Закрыть</button>
+                <div class="modal-reg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <span class="modal-title">Регистрация</span>
+                      </div> 
+                       <div class="modal-body">
+                            <div class="containerSet-reg">
+                                <div class='social-title' style='overflow:hidden'>
+                                    <div class="g-signin2" id='google-reg' data-onsuccess="onSignIn" data-width="234px" data-height="78px">Google</div>
+                                </div>
+                                <button class="social-title">Facebook</button>
+                            </div>
+                            <div class="containerSep">
+                                <div class="separator"></div>
+                                <p class="sep-lable-reg">Или</p>
+                            </div>
+                            <div class="container-log">
+                                <p class="login">Почта:</p>
+                                <input id='reg-email' type="email" name="">
+                                <p class="login"> Пароль:</p>
+                                <input id='reg-password' type="password" name="">
+                                <p class="pass_two"> Повторите пароль: </p>
+                                <input id='reg-password-two' type="password" name="">
+                                <input id='reg-submit' type="submit" name="" data-hystmodal="#createProfileModal" value="Регистрация">                                
+                            </div>
+                            
+                        </div>
+                        <div class='validation-reg'> </div>
+                    </div>
+                    <div class="ref-comm-reg">Являетесь юр.лицом? <a href="" data-hystmodal="#regComModal">Зарегистрироваться</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="hystmodal" id="entranceModal" aria-hidden="true">
+        <div class="hystmodal__wrap">
+            <div class="hystmodal__window entranceModal" role="dialog" aria-modal="true">
+                <button data-hystclose class="hystmodal__close">Закрыть</button>
+                <div class="modal-entr">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <span class="modal-title">Вход</span>
+                      </div> 
+                       <div class="modal-body">
+                            <div class="containerSet-entr">
+                                <div class='social-title' style='overflow:hidden'>
+                                    <div class="g-signin2" id='google-ent' data-onsuccess="onSignIn" data-width="234px" data-height="78px">Google</div>
+                                </div>
+                                <button class="social-title">Facebook</button>
+                            </div>
+                            <div class="containerSep">
+                                <div class="separator"></div>
+                                <p class="sep-lable-entr">Или</p>
+                            </div>
+                            <div class="container-log">
+                                <p class="login">Логин:</p>
+                                <input id='entr-email' type="email" name="">
+                                <p class="login"> Пароль:</p>
+                                <input id='entr-password' type="password" name="">
+                                
+                                <input id='entr-submit' type="submit" name="" value="Войти">
+                            </div>
+                        </div>
+                        <div class='validation-entr'></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="hystmodal" id="createProfileModal" aria-hidden="true">
+        <div class="hystmodal__wrap">
+            <div class="hystmodal__window createProfileModal" role="dialog" aria-modal="true">
+                <button  data-hystclose class="hystmodal__close">Закрыть</button>
+                <div class="modal-create">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <span class="modal-title-create">Создайте профиль</span>
+                      </div> 
+                       <div class="modal-body-create">
+                            <p class="text">Ваш никнейм</p>
+                            <div class="container-nik">
+                                <input id='nickname' type="email" name="">
+                            </div>
+                            <p class="text"> Выберите пол  </p>
+                            <div class="gender-container">
+                                <button class="gender-man">М</button>
+                            <button class="gender-women">Ж</button>
+                            </div>
+                            <p class="text"> Выберите аватар  </p>
+                            <div class="container-photo">
+                                <label class="file-lable">
+                                    <input type="file" name="" class="file-lable-input" value="+">
+                                </label>
+                            </div>
+                            <div class="footer">
+                                <input id='create-prof-submit' type="submit" name="" value="Продолжить">
+                            </div>
+                            
+                        </div>
+                        <div class='validation-prof'></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hystmodal" id="regComModal" aria-hidden="true">
+        <div class="hystmodal__wrap">
+            <div class="hystmodal__window comReg" role="dialog" aria-modal="true">
+                <button data-hystclose class="hystmodal__close">Close</button>  
+                <form class="modal-com-reg">
+                    <div class="modal-com-reg-h">
+                        <div class="modal-com-reg-infoCompany-h">
+                            <h2 class="modal-com-reg-infoCompany-h2">О компании:</h2>
+                        </div>
+                        <div class="modal-com-reg-data-field-h">
+                            <h2 class="modal-com-reg-data-field-h2">Данные для входа:</h2>
+                        </div>
+                    </div>
+                    <div class="modal-com-reg-inputs">
+                        <div class="modal-com-reg-infoCompany">                        
+                            <div class="modal-com-reg-infoCompany-name">
+                                <label for="name-company" class="modal-com-reg-infoCompany-name-lab">Название компании:</label>
+                                <input type="text" id="name-company" class="modal-com-reg-infoCompany-input-name" required>
+                            </div>
+                            <div class="modal-com-reg-infoCompany-person">
+                                <label for="person-company" class="modal-com-reg-infoCompany-person-lab">Контактное лицо:</label>
+                                <input type="text" id="person-company" class="modal-com-reg-infoCompany-input-person" required>
+                            </div>
+                            <div class="modal-com-reg-infoCompany-email">
+                                <label for="email-company" class="modal-com-reg-infoCompany-email-lab">Email:</label>
+                                <input type="email" id="email-company" class="modal-com-reg-infoCompany-input-email" placeholder="a@mail.ru" required>
+                            </div>
+                            <div class="modal-com-reg-infoCompany-phone">
+                                <label for="phone-company" class="modal-com-reg-infoCompany-phone-lab">Телефон:</label>
+                                <input type="tel" id="phone-company" class="modal-com-reg-infoCompany-input-phone" required>
+                            </div>
+                            <div class="modal-com-reg-infoCompany-inn">
+                                <label for="inn-company" class="modal-com-reg-infoCompany-inn-lab">ИНН:</label>
+                                <input type="number" id="inn-company" class="modal-com-reg-infoCompany-input-inn" required>
+                            </div>
+                            <div class="modal-com-reg-infoCompany-ogrn">
+                                <label for="ogrn-company" class="modal-com-reg-infoCompany-ogrn-lab">ОГРН:</label>
+                                <input type="number" id="ogrn-company" class="modal-com-reg-infoCompany-input-ogrn" required>
+                            </div>
+                        </div>
+                        <div class="modal-com-reg-infoCompany-middle-line">
+                            
+                        </div>
+                        <div class="modal-com-reg-data-field">                            
+                            <div class="modal-com-reg-login">
+                                <label for="modal-com-reg-inLogin" class="modal-com-reg-login-labelField">Введите почту:</label>
+                                <input type="text" class="modal-com-reg-login-inField" id="modal-com-reg-inLogin" required>
+                            </div>
+                            <div class="modal-com-reg-pass">
+                                <label for="modal-com-reg-inPass" class="modal-com-reg-pass-labelField">Пароль:</label>
+                                <input type="password" class="modal-com-reg-pass-inField" id="modal-com-reg-inPass" required>
+                            </div>
+                            <div class="modal-com-reg-pass-repeat">
+                                <label for="modal-com-reg-inRepPass" class="modal-com-reg-repeat-pass-labelField">Повторите пароль:</label>
+                                <input type="password" class="modal-com-reg-repeat-pass-inField" id="modal-com-reg-inRepPass" required>
+                            </div>
+                            <div class="modal-com-reg-button-area">
+                                <button type="submit"  class="modal-com-reg-button" data-hystmodal="#createProfileModal">Регистрация</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div> 
+    </div>   
+     
+</body>
+</html>

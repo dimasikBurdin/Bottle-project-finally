@@ -1,0 +1,80 @@
+/*Настройка выпадающего окна popup'a*/
+.leaflet-popup-content-wrapper {
+    background-color: white;
+    border-radius: 5%;
+    text-align: center;
+    min-width: 300px;
+}
+
+/*Настройка текста popup'a*/
+.leaflet-popup-content-wrapper .leaflet-popup-content {
+    /* background-color: rgb(32, 173, 32); */
+    /* margin-left: auto;
+    margin-right: auto; */
+}
+
+/*Область между маркером и окном с контентом*/
+.leaflet-popup-tip-container {
+    /* left: 20px; */
+}
+
+/*Крестик закрытия popup'a*/
+.leaflet-popup-close-button {
+    margin: 10px;
+}
+
+.marker-info {
+    
+    margin: 0;
+    padding: 10px;    
+    text-align: left;    
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.marker-info p, h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.marker-info-h2 {    
+    overflow-wrap: break-word;
+    color: #2F3952;
+}
+
+.marker-info-street {    
+    font-size: 14px;
+}
+
+.marker-info-field-des {
+    font-size: 18px;
+    resize: none;
+    height: auto;
+    width: 100%;
+    border-radius: 10px;
+    min-height: 100px;
+    max-height: 200px;    
+}
+
+.marker-info-field-images {
+    display: flex;    
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.marker-info-field-image {
+    width: 50px;
+    height: 50px;
+}
+
+.marker-info-button {
+    width: 100px;
+    height: 50px;
+    border: 1px;
+    border-radius: 30px;
+    background-color: #2F3952;
+    font-size: 18px;
+    color: rgba(255, 233, 167, 0.9);
+    cursor: pointer;
+}

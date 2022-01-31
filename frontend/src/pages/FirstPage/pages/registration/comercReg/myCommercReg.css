@@ -1,0 +1,82 @@
+.hystmodal__window.comReg{
+    width: 600px;
+    border-radius: 20px;
+}
+
+.modal-com-reg {    
+    height: 550px;
+    padding: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;    
+}
+
+.modal-com-reg-h {
+    display: flex;    
+    justify-content: space-around; 
+    color: #2F3952; 
+}
+
+.modal-com-reg-data-field-h {
+    /* margin: 0 0 0 50px; */
+}
+
+.modal-com-reg-inputs {
+    display: flex;
+    justify-content: space-around;
+}
+
+.modal-com-reg-inputs label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.modal-com-reg-inputs input{
+    border: 2px solid #FFE9A7;
+    border-radius: 20px;
+    height: 20px;
+    /* width: 100%; */
+    padding: 10px;
+}
+
+.modal-com-reg-infoCompany {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.modal-com-reg-data-field {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;    
+}
+
+.modal-com-reg-data-field-h2 {
+    
+}
+
+.modal-com-reg-infoCompany-middle-line {    
+    display: flex;
+    border: 1px solid #FFE9A7;
+    height: 100%;
+    align-self: center;
+    justify-content: center;    
+}
+
+.modal-com-reg-button-area {
+    display: flex;
+    align-self: center;
+    
+}
+
+.modal-com-reg-button {    
+    height: 60px;
+    
+    background-color: #FFE9A7;
+    color: #2F3952;
+    border: 1px;
+    border-radius: 40px;
+    padding: 20px;
+    font-size: 20px;
+}

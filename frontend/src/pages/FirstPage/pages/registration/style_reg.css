@@ -1,0 +1,173 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: "Roboto";
+    color: #2F3952;
+}
+
+.hystmodal__window.regModal {
+    width: 650px;
+    height: 500px;
+    border-radius: 20px;
+}
+
+.modal-reg{
+    background: #FFFFFF;    
+    border-radius: 20px;
+}
+
+.hystmodal__close {
+    top: 10px !important;
+    right: 10px !important;
+    width: 24px !important;
+    height: 24px !important;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23fff' stroke='%23111' stroke-linecap='square' stroke-miterlimit='50' stroke-width='2' d='M22 2L2 22'/%3E%3Cpath fill='none' stroke='%23111' stroke-linecap='square' stroke-miterlimit='50' stroke-width='2' d='M2 2l20 20'/%3E%3C/svg%3E") !important;
+}
+
+.modal-header{
+    padding-top: 16px ;
+    padding-bottom: 13px;
+    display: flex;
+    justify-content:center;
+}
+
+.modal-title{
+    font-size: 48px;
+    line-height: 56px;
+    color: #2F3952;
+    margin-left: 17px;    
+}
+
+.modal-body{
+    display: flex;
+    justify-content: space-between;
+    width: 647px;
+    margin-top: 0;
+    margin-bottom: 0;    
+}
+
+.modal-body>*:first-child{
+    align-self: center;
+    
+}
+
+.containerSet-reg{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+    margin-bottom: 40px;
+}
+
+.social-title{
+    width: 234px;
+    height: 78px;
+    background: rgba(99, 205, 218, 0.75);
+    border-radius: 80px;
+    margin-left: 10px;
+    color: #2F3952;
+    font-size: 37px;
+    border: 0;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.containerSep{
+    position: relative;
+}
+
+.separator{
+    height: 100%;
+    width: 2px;
+    background-color: #FFE9A7;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.sep-lable-reg{
+    width: 67px;
+    height: 25px;
+    background-color: #FFE9A7;
+    border-radius: 80px;
+    padding: 5px 10px;
+    font-size: 24px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    margin-top: 148px;
+}
+
+.container-log{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 41px;
+}
+
+.container-log input[type = "email"], .container-log input[type = "password"]{
+    padding: 10px;
+    font-size: 17px;
+    width: 233px;
+    height: 53px;
+    border: 2px solid #63CDDA;
+    box-sizing: border-box;
+    border-radius: 80px;
+}
+
+.container-log input[type = "submit"]{
+    background: #63CDDA;
+    border-radius: 80px;
+    text-align: center;
+    width: 187px;
+    height: 53px;
+    border: 0;
+    color: #2F3952;
+    font-size: 23px;
+    margin-top: 33px;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: relative;
+}
+
+.tekst{
+    position: absolute;
+    left: 14px;
+}
+
+.container-log input[type = "submit"]:hover{
+    background:whitesmoke;
+    border:2px solid #63CDDA ;
+}
+
+.login{
+    font-size: 15px;
+    line-height: 17px;
+   margin-bottom: 8px ;
+   margin-right: 140px;
+}
+
+.pass_two{
+    font-size: 15px;
+    line-height: 17px;
+   margin-bottom: 8px ;
+   margin-right: 70px;
+}
+
+.validation-reg {
+    margin-left: 405px;
+    margin-top: 10px;
+    color: crimson;
+}
+
+.ref-comm-reg {
+    text-align: center;
+    font-size: 20px;
+    font-family: Roboto;
+}
